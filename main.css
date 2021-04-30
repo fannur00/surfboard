@@ -11,45 +11,213 @@ ul {
   ul li {
     list-style: none; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  position: relative; }
+
 html {
   height: 100%; }
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
   height: 100%;
-  color: white; }
+  color: white;
+  font-size: 18px;
+  line-height: 1.2; }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+  position: relative; }
 
 .container {
   width: 920px;
   margin: 0 auto; }
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1; }
-
 .section {
   display: flex;
   flex-direction: column;
-  height: 652px;
-  padding-top: 24px;
-  padding-bottom: 69px; }
+  min-height: 652px;
+  padding-top: 103px;
+  padding-bottom: 114px;
+  color: #000;
+  height: 100%; }
 
-.hero {
-  background: url(./img/arnaud-mesureur-17OxKyThYPo-unsplash\ 1.png) no-repeat;
-  background-position: center center;
-  background-size: cover; }
+.section__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center; }
 
-.header {
+.benefit {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  width: 279px;
+  position: relative; }
+  .benefit::before {
+    content: '';
+    position: absolute;
+    background: url(./img/separator.png) center center/contain no-repeat;
+    right: -57px;
+    height: 139px;
+    width: 61px; }
+  .benefit:first-child {
+    padding-left: 0; }
+  .benefit:last-child {
+    padding-right: 0; }
+  .benefit:last-child::before {
+    display: none; }
+  .benefit__image {
+    margin-bottom: 20px; }
+  .benefit__image-wrapper {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: #F2F5F4;
+    border-radius: 50%;
+    position: relative; }
+  .benefit__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .benefit__title {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .benefit__disc {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+    font-weight: 300;
+    text-align: center; }
+
+.order-container {
+  z-index: 1; }
+
+.form {
+  display: flex; }
+
+.form__col {
+  flex: 1;
+  margin-right: 26px; }
+  .form__col:last-child {
+    margin-right: 0; }
+
+.form__row {
+  display: flex;
+  margin-bottom: 12px; }
+
+.form__block {
+  flex: 1;
+  margin-right: 12px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__input {
+  width: 100%;
+  height: 58px;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 12px;
+  border: 3px solid transparent; }
+  .form__input:focus {
+    outline: none;
+    border-color: #FEDB3F; }
+  .form__input--texterea {
+    height: 152px;
+    resize: none; }
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .interactive-avatar--active {
+    border: 6px solid #FEDB3F; }
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block; }
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.reviews__display {
+  background: #F8FAF9;
+  padding: 42px; }
+
+.reviews__display-inner {
+  display: flex; }
+
+.reviews__avatar {
+  width: 254px;
+  height: 264px; }
+
+.reviews__content {
+  flex: 1;
+  margin-left: 40px;
+  padding-top: 28px;
+  padding-right: 61px; }
+
+.reviews__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 14px; }
+
+.reviews__text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 400; }
+
+.reviews__author {
+  font-weight: 500; }
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
+.reviews__switchcer-item {
+  margin-right: 6px; }
+  .reviews__switchcer-item:last-child {
+    margin-right: 0; }
+
+.button {
+  display: inline-block;
+  width: 156px;
+  height: 60px;
+  border-radius: 100px;
+  background: #FEDB3F;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  color: #000; }
 
 .menu {
   font-weight: 700;
@@ -64,12 +232,53 @@ body {
   .menu__item:last-child {
     margin-right: 0; }
 
+.benefits {
+  display: flex;
+  justify-content: space-between; }
+
+.headline {
+  text-align: center; }
+  .headline__subtitle {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding: 0 240px;
+    margin-top: 21px; }
+
 .contacts {
   font-style: normal; }
 
 .contact__phone {
   font-weight: bold;
   font-size: 22px; }
+
+.order-section {
+  background: url("../img/bg surfer.jpg") center top/cover no-repeat;
+  color: #fff;
+  position: relative; }
+  .order-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.hero {
+  background: url(./img/arnaud-mesureur-17OxKyThYPo-unsplash\ 1.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 69px; }
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1; }
 
 .hero__content {
   width: 50%; }
@@ -83,26 +292,33 @@ body {
   font-size: 21px;
   margin-bottom: 39px; }
 
-.button {
-  display: inline-block;
-  width: 156px;
-  height: 60px;
-  border-radius: 100px;
-  background: #FEDB3F;
-  font-weight: 800;
-  font-size: 16px;
-  padding: 21px 41px;
-  text-transform: uppercase;
-  color: #000; }
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 23px 0;
+  background: #fff;
+  color: #000;
+  height: 93px; }
+
+.butter {
+  margin-right: 33px;
+  display: flex; }
+  .butter__img {
+    margin-right: 14.5px; }
+  .butter__text {
+    font-weight: 700;
+    font-size: 16px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.map-section {
+  background: url(../img/map.png) center center/cover no-repeat; }
 
 .butters {
   display: flex;
   width: 20px; }
-  .butters .butter {
-    margin-right: 33px;
-    display: flex; }
-    .butters .butter__img {
-      margin-right: 14.5px; }
-    .butters .butter__text {
-      font-weight: 700;
-      font-size: 16px; }

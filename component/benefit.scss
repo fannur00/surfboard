@@ -1,0 +1,61 @@
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 279px;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        background: url(./img/separator.png)center center / contain no-repeat;
+        right: -57px;
+        height: 139px;
+        width: 61px;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
+    &:last-child::before{
+        display: none;
+    }
+
+    &__image {
+        margin-bottom: 20px;
+    }
+
+    &__image-wrapper {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+        background: #F2F5F4;
+        border-radius: 50%;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__title {
+        text-align: center;
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+    }
+    &__disc {
+        @include baseFont;
+        font-weight: 300;
+        text-align: center;
+
+    }
+ }
+   
+.order-container {
+    z-index: 1;
+}

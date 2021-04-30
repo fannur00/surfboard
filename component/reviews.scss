@@ -1,0 +1,29 @@
+.reviews__display {
+    background: #F8FAF9;
+    padding: 42px;
+}
+.reviews__display-inner {
+    display: flex;
+}
+.reviews__avatar {
+    width: 254px;
+    height: 264px;
+}
+.reviews__content {
+    flex: 1;
+    margin-left: 40px;
+    padding-top: 28px;
+    padding-right: 61px;
+}
+.reviews__title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.reviews__text {
+    margin-bottom: 25px;
+    @include baseFont;
+}
+.reviews__author {
+    font-weight: 500;
+}

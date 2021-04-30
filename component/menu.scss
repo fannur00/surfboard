@@ -1,0 +1,12 @@
+.menu {
+    @include font;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    margin-right: 22px;
+    &:last-child {
+        margin-right: 0;
+    }
+}

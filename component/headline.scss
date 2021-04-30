@@ -1,0 +1,11 @@
+.headline {
+    text-align: center;
+
+
+    &__subtitle {
+        @include baseFont;
+        margin-bottom: 50px;
+        padding: 0 240px;
+        margin-top: 21px;
+    }
+}
