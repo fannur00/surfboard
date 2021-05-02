@@ -309,7 +309,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); }
 
 .hero {
-  background: url(/img/serf.jpg) no-repeat;
+  background: url(./img/serf.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
   color: #fff;
@@ -361,7 +361,7 @@ body {
   align-items: center; }
 
 .map-section {
-  background: url(/img/map.png) center center/cover no-repeat; }
+  background: url(./img/map.png) center center/cover no-repeat; }
 
 .butters {
   display: flex;
@@ -426,7 +426,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(/img/vk.png) center center/cover no-repeat;
+  background: url(./img/vk.png) center center/cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute; }
@@ -436,7 +436,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(/img/fb.png) center center/cover no-repeat;
+  background: url(./img/fb.png) center center/cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute; }
@@ -446,7 +446,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(/img/inst.png) center center/cover no-repeat;
+  background: url(./img/inst.png) center center/cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute; }
@@ -456,7 +456,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(/img/tw.png) center center/cover no-repeat;
+  background: url(./img/tw.png) center center/cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute; }
