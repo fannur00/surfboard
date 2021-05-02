@@ -3,7 +3,7 @@
 
 a {
   text-decoration: none;
-  color: white; }
+  color: inherit; }
 
 ul {
   margin: 0;
@@ -22,6 +22,11 @@ h6 {
 p {
   margin: 0;
   padding: 0; }
+
+button,
+button:active,
+button:focus {
+  outline: none; }
 
 footer {
   position: relative; }

@@ -1,6 +1,6 @@
 .form {
     display: flex;
-
+    margin-top: 62px;
     }
 .form__col {
     flex: 1;
@@ -12,11 +12,15 @@
 }
 .form__row {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 .form__block {
     flex: 1;
-    margin-right: 12px;
+    margin-right: 17px;
+
+    &--little {
+        margin-right: 12px;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -41,5 +45,21 @@
     &--texterea {
         height: 152px;
         resize: none;
+        margin-bottom: 18px;
     }
+}
+.form__controls {
+    display: flex;
+}
+
+
+.form__controls {
+    margin-bottom: 19px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.form__btn {
+    margin-top: 47px;
 }

@@ -5,4 +5,18 @@
     font-weight: bold;
     font-size: 22px;
 
+    &::before {
+        content: url(../img/phone-b.png);
+        margin-right: 7px;
+
+    }
+}
+.contacts-info {
+    font-size: 21px;
+    font-weight: 400;
+}
+.contact__phone-top {
+    &::before {
+        content: url(../img/phone.png);
+    }
 }

@@ -44,14 +44,13 @@
                         </ul>
                     </nav>
                     <address class="contacts">
-                        <img src="./img/phone.png" alt="phone" class="contcts__phone-img">
-                        <a href="tel: +79263752376" class="contact__phone">8 800 903 90 90</a>
+                        <a href="tel: +79263752376" class="contact__phone contact__phone-top">8 800 903 90 90</a>
                     </address>
                 </header>
                 <div class="hero__content">
                     <h1 class="hero__title">Профессиональные доски для серфинга</h1>
                     <h4 class="hero__subtitle">Самый большой выбор серфбордов в мире</h4>
-                    <a href="#" class="button">заказать</a>
+                    <a href="#" class="button button--yellow">заказать</a>
                 </div>
                 <ul class="butters">
                     <li class="butter">
@@ -69,7 +68,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section">
+        <div class="section why-section">
             <div class="container">
                 <div class="headline">
                     <h2 class="section__title headline__title ">почему Surfboard?</h2>
@@ -112,9 +111,9 @@
                 </ul>   
             </div>
         </div>
-        <div class="section">
+        <div class="section reviews-section">
             <div class="container">
-                <h2 class="section__title">Отзывы</h2>
+                <h2 class=" section__title section__title-reviews">Отзывы</h2>
                 <div class="reviews">
                     <div class="reviews__display">
                         <div class="reviews__display-inner">
@@ -160,7 +159,7 @@
                     <div class="form__col">
                         <div class="form__row">
                             <label class="form__block">
-                                <div class="form__title">имя</div>
+                                <div class="form__title">Имя</div>
                                 <input type="text" class="form__input">
                             </label>
                             <label class="form__block">
@@ -169,25 +168,25 @@
                             </label>
                         </div>
                         <div class="form__row">
-                            <label class="form__block">
+                            <label class="form__block form__title--little">
                                 <div class="form__title">Улица</div>
                                 <input type="text" class="form__input">
                             </label>
                         </div>
                         <div class="form__row">
-                            <label class="form__block">
+                            <label class="form__block form__block--little">
                                 <div class="form__title">Дом</div>
                                 <input type="text" class="form__input">
                             </label>
-                            <label class="form__block">
+                            <label class="form__block form__block--little">
                                 <div class="form__title">Корпус</div>
                                 <input type="text" class="form__input">
                             </label>
-                            <label class="form__block">
+                            <label class="form__block form__block--little">
                                 <div class="form__title">Квартира</div>
                                 <input type="text" class="form__input">
                             </label>
-                            <label class="form__block">
+                            <label class="form__block form__block--little">
                                 <div class="form__title">Этаж</div>
                                 <input type="text" class="form__input">
                             </label>
@@ -200,20 +199,91 @@
                                 <textarea class="form__input form__input--texterea" ></textarea>
                             </label>
                         </div>
-                    </div>    
+                        <div class="form__controls">
+                            <label class="radio">
+                                <input type="radio" name="option" class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Оплата наличными</div>
+                            </label>
+                            <label class="radio">
+                                <input type="radio"  name="option"class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Оплата картой</div>
+                            </label>
+                        </div>
+                        <div class="form__controls">
+                            <label class="radio radio--checkbox">
+                                <input type="checkbox" class="radio__elem">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Не перезванивать</div>
+                            </label>
+                        </div>  
+                        <div class="form__btn">
+                            <button type="submit" class="button button--yellow">ЗАКАЗАТЬ</button>
+                            <button type="reset" class="button button--transparent">Очистить</button>
+                        </div> 
+                    </div> 
+                    
                 </form>
             </div>
         </div>
         <div class="section map-section">
-            <footer class="footer">
-                <div class="container">
-                    <address class="contacts">
-                        <img src="./img/phone.png" alt="phone" class="contcts__phone-img">
-                        <a href="tel: +79263752376" class="contact__phone">8 800 903 90 90</a>
-                    </address
-                </div>
-            </footer>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="fotter-content">
+                    <address class="contacts">
+                        <div class="contacts-info">Москва, ул.Новый Арбат, д.31/12</div>
+                        <a href="tel: +79263752376" class="contact__phone">8 800 903 90 90</a>
+                    </address>
+                    <ul class="social">
+                        <li class="social-item social-item--vk" >
+                            <a href="#" class="social-link"></a>
+                        </li>
+                        <li class="social-item social-item--fb" >
+                            <a href="#" class="social-link"></a>
+                        </li>
+                        <li class="social-item social-item--inst" >
+                            <a href="#" class="social-link"></a>
+                        </li>
+                        <li class="social-item social-item--tw" >
+                            <a href="#" class="social-link"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </footer>
     </div>
+    <nav class="fixed-menu">
+        <ul class="fixed-menu__list">
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="#" class="fixed-menu__link"></a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>

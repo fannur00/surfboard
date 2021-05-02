@@ -2,6 +2,10 @@
     margin-right: 33px;
     display: flex;
 
+    &:last-child {
+        margin-right: 0;
+    }
+
     &__img {
         margin-right: 14.5px;
     }

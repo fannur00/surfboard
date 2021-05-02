@@ -1,10 +1,11 @@
 .footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-   padding: 23px 0;
-   background: #fff;
-   color: #000;
-   height: 93px;
+    padding: 17px 0;
+    
+}
+.fotter-content {
+    height: 87px;
+    display: flex;
+    justify-content: space-between;
+    color: #292929;
+    align-items: center;
 }
