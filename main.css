@@ -428,7 +428,7 @@ body {
   padding-bottom: 4.3125rem; }
   @media screen and (max-width: 768px) {
     .hero {
-      background: url("/img/tablets.png") center center/cover no-repeat;
+      background: url("./img/tablets.png") center center/cover no-repeat;
       background-color: #1968B1;
       padding-top: 0;
       padding-bottom: 0; } }
