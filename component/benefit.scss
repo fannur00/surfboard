@@ -2,16 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 279px;
+    width: 17.4375rem;
     position: relative;
+
+    @include phones {
+        flex-direction: row;
+        width: 95%;
+        margin-bottom: 31px;
+        
+    }
     
     &::before {
         content: '';
         position: absolute;
         background: url(./img/separator.png)center center / contain no-repeat;
-        right: -57px;
-        height: 139px;
-        width: 61px;
+        right: -3.5625rem;
+        height: 8.6875rem;
+        width: 3.8125rem;
+
+        @include tablets {
+            display: none;
+        }
     }
     &:first-child {
         padding-left: 0;
@@ -24,28 +35,43 @@
     }
 
     &__image {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+
+        @include phones {
+            margin-bottom: 0;
+        }
     }
 
     &__image-wrapper {
         display: inline-block;
-        width: 128px;
-        height: 128px;
+        width: 8rem;
+        height: 8rem;
         background: #F2F5F4;
         border-radius: 50%;
         position: relative;
+
+        @include phones {
+            margin-right: 0.75rem;
+        }
     }
     &__icon {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+
+        
     }
     &__title {
         text-align: center;
-        font-size: 27px;
+        font-size: 1.6875rem;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+
+        @include phones {
+            text-align: start;
+            margin-bottom: 0.625rem;
+        }
 
     }
     &__disc {
@@ -53,7 +79,11 @@
         font-weight: 300;
         text-align: center;
 
+        @include phones {
+            text-align: start;
+        }
     }
+    
  }
    
 .order-container {

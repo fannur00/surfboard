@@ -2,61 +2,29 @@
     display: flex;
 }
 .social-item {
-    margin-right: 14px;
-}
-.social-link {
-    width: 20px;
-    height: 20px;
-    display: block;
-    position: relative;
+    margin-right: 0.875rem;
 
-    
-}
-.social-item--vk .social-link {
-        &::before {
-        content: "";
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: url(./img/vk.png) center center / cover no-repeat;
-        width: 100%;
-        height: 100%;
-        position: absolute;
+    &:last-child {
+        margin-right: 0;
     }
 }
-.social-item--fb .social-link {
-    &::before {
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(./img/fb.png) center center / cover no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-}
-.social-item--inst .social-link {
-    &::before {
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(./img/inst.png) center center / cover no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-}
-.social-item--tw .social-link {
-    &::before {
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(./img/tw.png) center center / cover no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-}
+.social-link {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    position: relative;
+    
+    &:hover {
+        .social-icon{
+            opacity: 1;
+            transition: .3s;
+        }
+    }
+
+ }
+ .social-icon {
+     width: 1.25rem;
+     height: 1.25rem;
+     opacity: .3;
+     transition: .2s;
+ } 

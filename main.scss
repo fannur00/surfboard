@@ -1,4 +1,15 @@
-@import "layout";
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+$miniPhones: 390px;
+
+
+@import "./media";
+
+
+@import "./layout";
+
 
 
 //component
@@ -7,6 +18,7 @@
 @import "component/benefit.scss";
 @import "component/form.scss";
 @import "component/interective__avatar.scss";
+@import "component/reviews-section.scss";
 @import "component/reviews.scss";
 @import "component/reviews__switcher.scss";
 @import "component/button.scss";
@@ -23,6 +35,6 @@
 @import "component/butters.scss";
 @import "component/radio.scss";
 @import "component/why-section.scss";
-@import "component/reviews-section.scss";
 @import "component/social.scss";
 @import "component/fixed-menu.scss";
+@import "component/humburger.scss";

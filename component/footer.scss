@@ -1,11 +1,19 @@
 .footer {
-    padding: 17px 0;
-    
+    padding: 1.0625rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
 }
 .fotter-content {
-    height: 87px;
+    height: 5.4375rem;
     display: flex;
     justify-content: space-between;
     color: #292929;
     align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
