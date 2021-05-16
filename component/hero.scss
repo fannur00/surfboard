@@ -5,6 +5,7 @@
     color: #fff;
     padding-top: 1.5rem;
     padding-bottom: 4.3125rem;
+    position: relative;
 
     @include tablets {
 
@@ -15,12 +16,7 @@
 
     }
 }
-.hero-section {
-    @include tablets {
 
-
-    }
-}
 .hero__container {
     display: flex;
     flex-direction: column;

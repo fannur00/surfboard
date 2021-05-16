@@ -69,6 +69,10 @@ body {
     line-height: 1.2;
 
 }
+.body-wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
 .wrapper {
     display: flex;
     flex-direction: column;

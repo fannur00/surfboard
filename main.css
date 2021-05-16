@@ -52,6 +52,10 @@ body {
   font-size: 18px;
   line-height: 1.2; }
 
+.body-wrapper {
+  min-height: 100vh;
+  overflow: hidden; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -68,8 +72,9 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 40.75rem;
-  color: #000;
-  height: 100vh; }
+  color: #666666;
+  height: 100vh;
+  position: relative; }
 
 .section__title {
   font-size: 3rem;
@@ -78,7 +83,8 @@ body {
   text-align: center; }
 
 .section__title-reviews {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #000; }
 
 .benefit {
   display: flex;
@@ -131,7 +137,8 @@ body {
     text-align: center;
     font-size: 1.6875rem;
     font-weight: bold;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    color: #000; }
     @media screen and (max-width: 480px) {
       .benefit__title {
         text-align: start;
@@ -246,6 +253,111 @@ body {
   height: 100%;
   object-fit: cover; }
 
+.product-section {
+  background: #F8FAF9; }
+
+.product__container {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .product__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; } }
+
+.product__col {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 4.875rem; }
+  .product__col:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .product__col {
+      margin-right: 0;
+      align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .product__col-right {
+    width: 77%; } }
+
+@media screen and (max-width: 768px) {
+  .product__ingredients {
+    display: none; } }
+
+.product__title {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000; }
+  @media screen and (max-width: 768px) {
+    .product__title {
+      margin-bottom: 0.8125rem; } }
+
+@media screen and (max-width: 768px) {
+  .product__text {
+    text-align: center; } }
+
+.product__info {
+  display: flex;
+  font-size: 1.125rem;
+  align-items: center;
+  white-space: nowrap; }
+  @media screen and (max-width: 768px) {
+    .product__info {
+      margin-top: 1.375rem; } }
+
+.product__info-col {
+  margin-right: 3.25rem; }
+  .product__info-col:last-child {
+    margin-right: 0; }
+
+.product__info-desc {
+  color: #666666; }
+
+.product__info-size {
+  color: #000;
+  font-weight: bold; }
+
+.product__price {
+  font-size: 3.75rem;
+  color: #000;
+  margin-right: 1.75rem;
+  white-space: nowrap; }
+
+.product-slider__arrows {
+  position: relative; }
+
+.product-slider__arrow {
+  position: absolute;
+  top: 250px;
+  z-index: 5;
+  display: block; }
+
+.product-slider__arrow-icon {
+  width: 0.875rem;
+  height: 1.75rem;
+  display: block; }
+
+.product-slider__arrow--right {
+  right: -0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .product-slider__arrow--right {
+      right: 8.0625rem; } }
+  @media screen and (max-width: 480px) {
+    .product-slider__arrow--right {
+      right: 0.0625rem; } }
+
+.product-slider__arrow--left {
+  left: -1.3125rem; }
+  @media screen and (max-width: 768px) {
+    .product-slider__arrow--left {
+      left: 6.6875rem; } }
+  @media screen and (max-width: 480px) {
+    .product-slider__arrow--left {
+      left: -0.3125rem; } }
+
 .reviews-section {
   padding-top: 0; }
 
@@ -342,6 +454,19 @@ body {
     .menu {
       display: none; } }
 
+.menu--vertical {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  line-height: 2; }
+  @media screen and (max-width: 768px) {
+    .menu--vertical {
+      display: block; } }
+
+.menu--vertical .menu__list {
+  display: flex;
+  flex-direction: column; }
+
 .menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +488,8 @@ body {
       flex-direction: column; } }
 
 .headline {
-  text-align: center; }
+  text-align: center;
+  color: #000; }
   .headline__subtitle {
     font-size: 18px;
     color: #666;
@@ -406,6 +532,69 @@ body {
     .header__contacts {
       display: none; } }
 
+.ingredients {
+  cursor: pointer;
+  position: relative;
+  display: inline-block; }
+  .ingredients:hover .ingredients-dropdown {
+    opacity: 1;
+    left: 100%; }
+
+.ingredients__button-icon {
+  margin-bottom: 0.4375rem; }
+
+.ingredients__button-icon__elem {
+  width: 2.375rem;
+  height: 2.375rem;
+  display: block; }
+
+.ingredients__button {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  background-color: #3A587E;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.ingredients__button-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase; }
+
+.ingredients-dropdown {
+  width: 17.0625rem;
+  min-height: 18.1875rem;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  top: 0;
+  left: -5000px;
+  padding: 28px 25px 31px 28px;
+  color: #000;
+  opacity: 0;
+  transform: opacity .3s; }
+
+.ingredients__item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 1.75rem;
+  justify-content: space-between; }
+  .ingredients__item:last-child {
+    margin-bottom: 0; }
+
+.ingredients__item-text {
+  margin-right: 26px; }
+
+.ingredients__item-icon {
+  width: 2rem;
+  height: 2rem;
+  display: block; }
+
 .order-section {
   background: url("./img/bg surfer.jpg") center top/cover no-repeat;
   color: #fff;
@@ -425,7 +614,8 @@ body {
   background-size: cover;
   color: #fff;
   padding-top: 1.5rem;
-  padding-bottom: 4.3125rem; }
+  padding-bottom: 4.3125rem;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .hero {
       background: url("./img/tablets.png") center center/cover no-repeat;
@@ -635,3 +825,31 @@ body {
   background: #fff;
   height: 4px;
   border-radius: 10px; }
+
+.fullscrean-menu.active {
+  display: flex; }
+
+.fullscrean-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #313131;
+  overflow: hidden;
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  display: none; }
+
+.fullscrean-menu__close-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #FFFFFF; }
+
+.fullscrean-menu__close {
+  display: block;
+  position: absolute;
+  top: 2.625rem;
+  right: 2.625rem;
+  opacity: 0.7; }

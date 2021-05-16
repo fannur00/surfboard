@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     min-height: 40.75rem;
-    color: #000;
+    color: #666666;
     height: 100vh;
+    position: relative;
 }
 .section__title {
     font-size: 3rem;
@@ -14,4 +15,5 @@
 }
 .section__title-reviews {
     margin-bottom: 2rem;
+    color: #000;
 }
