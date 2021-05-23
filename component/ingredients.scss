@@ -37,7 +37,7 @@
     width: 17.0625rem;
     min-height: 18.1875rem;
     position: absolute;
-    background: rgba(255, 255, 255, 0.8); 
+    background: rgba(255, 255, 255, 0.9); 
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     top: 0;  
@@ -55,6 +55,10 @@
     white-space: nowrap;
     margin-bottom: 1.75rem;
     justify-content: space-between;
+    
+    .ingredients__item-cell{
+        justify-content: flex-end;
+    }
 
 
     &:last-child {
@@ -62,11 +66,14 @@
     }
 }
 .ingredients__item-text {
-    margin-right: 26px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 
 }
 .ingredients__item-icon {
     width: 2rem;
     height: 2rem;
-    display: block;
+    display: inline-block;
+    margin-right: 0.3125rem;
 }

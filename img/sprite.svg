@@ -64,12 +64,12 @@
     </symbol>
     <symbol id="arrowLeft" viewBox="0 0 15 29">
     <g>
-        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <path  d="M12,25a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,16l-7.3-7.29a1,1,0,1,1,1.42-1.42l8,8a1,1,0,0,1,0,1.42l-8,8A1,1,0,0,1,12,25Z"/>
     </g>
     </symbol>
     <symbol id="arrowRight" viewBox="0 0 15 29">
     <g>
-        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <path  d="M12,25a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,16l-7.3-7.29a1,1,0,1,1,1.42-1.42l8,8a1,1,0,0,1,0,1.42l-8,8A1,1,0,0,1,12,25Z"/>
     </g>
     </symbol>
     <symbol id="length" viewBox="0 0 32 32">

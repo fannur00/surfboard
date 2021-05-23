@@ -72,7 +72,11 @@
             margin-bottom: 0;
         }
     }
+    &-error {
+        border-color: red;
+    }
 }
+
 .form__controls {
     display: flex;
 

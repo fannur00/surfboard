@@ -16,4 +16,7 @@
     @include phones {
         flex-direction: column;
     }
+    .phone-icon{
+        fill: #000;
+    }
 }

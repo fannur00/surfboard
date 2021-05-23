@@ -1,10 +1,26 @@
 .reviews__display {
     background: #F8FAF9;
     padding: 2.625rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
 
     @include tablets {
         padding: 2.5rem 0;
     }
+}
+.reviews__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+
+}
+.reviews__item.active {
+    position: static;
+    opacity: 1;
 }
 .reviews__display-inner {
     display: flex;
@@ -20,6 +36,7 @@
 .reviews__avatar {
     width: 15.875rem;
     height: 16.5rem;
+    
 
     @include tablets {
         width: 8.4375rem;
@@ -40,6 +57,7 @@
     font-size: 1.6875rem;
     font-weight: bold;
     margin-bottom: 0.875rem;
+    color: #000;
 }
 .reviews__text {
     margin-bottom: 1.5625rem;
@@ -47,4 +65,5 @@
 }
 .reviews__author {
     font-weight: 500;
+    color: #000;
 }

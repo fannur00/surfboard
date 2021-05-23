@@ -1,0 +1,39 @@
+.product-slider__arrows {
+    position: relative;
+}
+.product-slider__arrow {
+    position: absolute;
+    top: 250px;
+    z-index: 5;
+    display: block;
+}
+.product-slider__arrow-icon {
+    width: 2.5rem;
+    height: 2.375rem;
+    display: block;
+}
+.product-slider__arrow--right {
+    right: -0.9375rem;
+
+    @include tablets {
+        right: 7.0625rem;
+
+    }
+
+    @include phones {
+        right: 0.0625rem;
+    }
+}
+.product-slider__arrow--left {
+    left: -1.3125rem;
+    transform: rotate(-180deg);
+
+    @include tablets {
+        left: 6.6875rem;
+
+    }
+
+    @include phones {
+        left: -0.3125rem;
+    }
+}

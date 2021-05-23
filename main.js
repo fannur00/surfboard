@@ -1,15 +1,18 @@
-const humburger = document.querySelector('#humburger');
-const fullMenu = document.querySelector('.fullscrean-menu');
-const fullMenuClose = document.querySelector('.fullscrean-menu__close');
-const body = document.body;
+$(document).ready(() => {
+    $('.team__title').on('click', function(e) {
+        e.preventDefault();
+        let teamContent = $(this).siblings('.team__content');
+        const teamItem = $(this).parent('.team__item');
+        teamItem.siblings('.team__item').find('.team__content').css('height', 0);
+        $(this).parent().toggleClass('active');
 
-humburger.addEventListener('click', e => {
-    fullMenu.classList.add('active')
-    body.classList.add('body-wrapper')
+        if($(this).parent().hasClass('active')){
+            $(this).parent().siblings().removeClass('active');
+            teamContent.css('height', teamContent.prop('scrollHeight') +'px');
 
-    fullMenuClose.addEventListener('click', e => {
-        fullMenu.classList.remove('active')
-        body.classList.remove('body-wrapper')
+        }else {
+            teamContent.css('height', 0);
+        }
     });
-
+    
 });
