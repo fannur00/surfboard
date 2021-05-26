@@ -848,6 +848,76 @@ body {
     .team--mobil {
       display: flex; } }
 
+.section__slider {
+  background: url(../img/Slider-menu.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff; }
+  .section__slider .section__title {
+    position: absolute;
+    top: 6.8125rem;
+    left: 5.25rem;
+    color: #fff; }
+
+.board-menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+  .board-menu__item {
+    display: flex; }
+
+.bm-item--one .bm-item__header {
+  background: url(../img/ben-selway-UjhBpaO_Im8-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.bm-item--two .bm-item__header {
+  background: url(../img/Slider-menu2.jpg) no-repeat;
+  background-position: -44.875rem;
+  background-size: cover; }
+
+.bm-item--three .bm-item__header {
+  background: url(../img/Slider-menu3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.bm-item {
+  flex: 1 1 auto;
+  display: flex; }
+  .bm-item__header {
+    position: relative;
+    width: 102px; }
+    .bm-item__header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+  .bm-item__title {
+    font-size: 3rem;
+    font-weight: 700;
+    transform: rotate(270deg);
+    bottom: 110px;
+    position: absolute;
+    left: -60px;
+    z-index: 1; }
+
+.bm-item__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.bm-item__content {
+  display: none;
+  width: 500px;
+  padding: 38px 80px 0 31px;
+  background: rgba(51, 53, 55, 0.9); }
+
 .product-slider__arrows {
   position: relative; }
 
