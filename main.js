@@ -1,18 +1,27 @@
-$(document).ready(() => {
-    $('.team__title').on('click', function(e) {
-        e.preventDefault();
-        let teamContent = $(this).siblings('.team__content');
-        const teamItem = $(this).parent('.team__item');
-        teamItem.siblings('.team__item').find('.team__content').css('height', 0);
-        $(this).parent().toggleClass('active');
-
-        if($(this).parent().hasClass('active')){
-            $(this).parent().siblings().removeClass('active');
-            teamContent.css('height', teamContent.prop('scrollHeight') +'px');
-
-        }else {
-            teamContent.css('height', 0);
-        }
+const init = () => {
+    const myMap = new ymaps.Map("map", {
+        center: [55.796627, 49.119409],
+        zoom: 13,
+        controls: [] 
     });
-    
-});
+
+    const coords = [
+        [55.791805, 49.113666],
+        [55.809899, 49.093185],
+        [55.822082, 49.142545]
+    ];
+    const myCollection = new ymaps.GeoObjectCollection({}, {
+        draggable: false,
+        iconLayout: 'default#image',
+        iconImageHref: './img/marker.svg',
+        iconImageSize: [44, 54],
+        iconImageOffset: [-3, -42]
+    });
+    coords.forEach(coord => {
+        myCollection.add(new ymaps.Placemark(coord));
+    });
+    myMap.geoObjects.add(myCollection);
+    myMap.behaviors.disable('scrollZoom');
+}
+
+ymaps.ready(init);

@@ -1,20 +1,16 @@
-.headline {
+
+
+.section__subtitle {
+    @include baseFont;
     text-align: center;
-    color: #000;
+    max-width: 27rem;
+     margin: 0 auto 3rem;
 
+    @include tablets {
+        max-width: 23rem;
+    }
 
-    &__subtitle {
-        @include baseFont;
-        margin-bottom: 3.125rem;
-        padding: 0 15rem;
-        margin-top: 1.3125rem;
-
-        @include tablets {
-            padding: 0 9.1rem;
-        }
-
-        @include phones {
-            padding: 0;
-        }
+    @include phones {
+        max-width: 31rem;
     }
 }

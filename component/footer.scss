@@ -5,8 +5,9 @@
     left: 0;
     right: 0;
     background: #fff;
+    z-index: 1;
 }
-.fotter-content {
+.footer__content {
     height: 5.4375rem;
     display: flex;
     justify-content: space-between;
@@ -16,7 +17,7 @@
     @include phones {
         flex-direction: column;
     }
-    .phone-icon{
+    .contacts__phone-icon{
         fill: #000;
     }
 }

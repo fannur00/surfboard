@@ -8,11 +8,12 @@
     &__item {
         display: flex;
     }
-    
 }
+
+
 .bm-item--one {
     .bm-item__header {
-        background: url(./img/ben-selway-UjhBpaO_Im8-unsplash.jpg) no-repeat;
+        background: url(./img/slider_menu_1.jpg) no-repeat;
         background-position: center;
         background-size: cover;
         
@@ -20,7 +21,7 @@
 }
 .bm-item--two {
     .bm-item__header {
-        background: url(./img/Slider-menu2.jpg) no-repeat;
+        background: url(./img/slider_menu_2.jpg) no-repeat;
         background-position: -44.875rem;
         background-size: cover;
         
@@ -28,12 +29,13 @@
 }
 .bm-item--three {
     .bm-item__header {
-        background: url(./img/Slider-menu3.jpg) no-repeat;
+        background: url(./img/slider_menu_3.jpg) no-repeat;
         background-position: center;
         background-size: cover;
         
     }
 }
+
 
 .bm-item {
     flex: 1 1 auto;
@@ -71,9 +73,116 @@
     width: 100%;
     object-fit: cover;
 }
+
+
 .bm-item__content {
-    display: none;
-    width: 500px;
-    padding: 38px 80px 0 31px;
+    width: 0;
+    overflow: hidden;
     background: rgba(51, 53, 55, 0.9);
+    transition: width .7s;
+}
+.bm-item__container {
+    padding: 2.22222rem 4.05556rem 2.5rem 1.44444rem;
+}
+
+
+.player {
+    max-width: 41.375rem;
+    height: 24.5rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1.875rem;
+
+    &.paused {
+        .player__start{
+            border-left: 7.4px solid #fff;
+            border-top: 0 solid transparent;
+            border-bottom: 0 solid transparent;
+            height: 20.992px;
+            border-right: 7.4px solid #fff;
+            padding: 2px
+        }
+
+        
+    }
+}
+.player__wrapper {
+    height: 100%;
+
+    &.active {
+        .player__splash{
+            display: none;
+
+        }
+    }
+    
+}
+
+.player__splash {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/player_img.jpg);
+    cursor: pointer;
+
+    &::before {
+        content: url(../img/play.jpg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+.player__controls {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2.125rem;
+    background-color: #404040;
+    padding: 0 11px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select:none
+}
+.player__start {
+    width: 11px;
+    height: 11px;
+    border:  0.625rem solid transparent;
+    border-left-color:#fff;
+    border-right-width: 0;
+    padding: 0;
+    background: 0 0;
+    cursor: pointer;
+    
+}
+.player__playback {
+    height: .88889rem;
+    position: relative;
+    flex: 1;
+    margin: 0 .83333rem;
+     
+    &::before {
+        content: "";
+        position: absolute;
+        background: #626262;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: .22222rem;
+        transform: translateY(-50%);
+        display: block;
+
+    }
+}
+.player__playback-button {
+    position: absolute;
+    width: 0.934375rem;
+    height: 0.934375rem;
+    border-radius: 0.4671875rem;
+    left: 0;
 }

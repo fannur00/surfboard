@@ -14,6 +14,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 ul {
     margin: 0;
@@ -35,10 +36,14 @@ p {
     margin: 0;
     padding: 0;
 }
+
+
 button, 
 button:active, 
 button:focus {
     outline: none;
+    border: none;
+    
 }
 
 footer {
@@ -64,7 +69,7 @@ html {
 body {
     font-family: 'Alegreya Sans', sans-serif;
     height: 100%;
-    color: white;
+    color: #fff;
     font-size: 18px;
     line-height: 1.2;
 
@@ -74,10 +79,14 @@ body {
     overflow: hidden;
 }
 .wrapper {
-    display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
     position: relative;
+}
+.maincontent{
+    height: 100%;
+    transition: transform 1s;;
 }
 .container {
     width: 95%;

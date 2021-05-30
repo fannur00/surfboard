@@ -21,7 +21,7 @@
     }
 
     @include phones {
-        right: 0.0625rem;
+        right: 1.0625rem
     }
 }
 .product-slider__arrow--left {
@@ -34,6 +34,6 @@
     }
 
     @include phones {
-        left: -0.3125rem;
+        left: 0.6875rem;
     }
 }

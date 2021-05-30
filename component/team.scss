@@ -44,6 +44,12 @@
     justify-content: center;
     align-items: center;
     user-select: none; 
+    cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+        color: #e2c230;;
+    }
 
     &::after {
         content: "";
@@ -69,17 +75,17 @@
 // .team__item.active .team__content{
 //     height: 100px;
 // }
-.team--desktop .team__content {
+.team_version_desktop .team__content {
     position: absolute;
     top: 100%;
 }
 
-.team--desktop {
+.team_version_desktop {
     @include tablets {
         display: none;
     }
 }
-.team--mobil {
+.team_version_mobil {
     display: none;
 
     @include tablets {
