@@ -39,7 +39,6 @@ p {
 
 
 button, 
-button:active, 
 button:focus {
     outline: none;
     border: none;
@@ -81,6 +80,7 @@ body {
 .wrapper {
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     width: 100%;
     position: relative;
 }

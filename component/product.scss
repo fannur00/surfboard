@@ -18,11 +18,12 @@
     display: flex;
     position: relative;
     transition: left .4s;
+    left: 0px;
+
 }
 .product-item {
     padding-left: 3.61111rem;
     position: relative;
-    left: 0px;
     width: 100%;
     flex-shrink: 0;
 

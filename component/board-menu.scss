@@ -85,21 +85,25 @@
     padding: 2.22222rem 4.05556rem 2.5rem 1.44444rem;
 }
 
-
-.player {
-    max-width: 41.375rem;
-    height: 24.5rem;
+.player-section__container {
+    max-width: 36.66667rem;
+    height: 22.5rem;
     position: relative;
     margin: 0 auto;
-    margin-top: 1.875rem;
+}
+.player {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
 
     &.paused {
         .player__start{
-            border-left: 7.4px solid #fff;
+            border-left: 5.4px solid #fff;
             border-top: 0 solid transparent;
             border-bottom: 0 solid transparent;
-            height: 20.992px;
-            border-right: 7.4px solid #fff;
+            height: 18.992px;
+            border-right: 5.4px solid #fff;
             padding: 2px
         }
 
@@ -116,6 +120,10 @@
         }
     }
     
+}
+.player__elem{
+    width: 100%;
+    height: 100%;
 }
 
 .player__splash {

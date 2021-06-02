@@ -2,13 +2,28 @@
     position: fixed;
     top: 20%;
     right: 3%;
+    color: #fff;
+
+    &_shadowed{
+        color: #000;
+    }
+
+    @include tablets {
+        display: none;
+    }
 }
 .fixed-menu__item {
     margin-bottom: 0.3125rem;
 
-    &--active {
+    &.active {
         .fixed-menu__link {
-            border-color: #FFF;
+            border-color: inherit;
+        }
+    }
+
+    &:hover {
+        .fixed-menu__link {
+            border-color: inherit;
         }
     }
 }
@@ -26,7 +41,7 @@
         height: 0.5625rem;
         border-radius: 50%;
         position: absolute;
-        background: #fff;
+        background: currentColor;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
