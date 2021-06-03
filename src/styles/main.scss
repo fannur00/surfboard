@@ -1,0 +1,47 @@
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+$miniPhones: 390px;
+
+
+@import "./media";
+
+@import "./layout";
+
+
+
+//component
+
+@import "component/section.scss";
+@import "component/benefit.scss";
+@import "component/form.scss";
+@import "component/interective__avatar.scss";
+@import "component/product.scss";
+@import "component/reviews-section.scss";
+@import "component/reviews.scss";
+@import "component/reviews__switcher.scss";
+@import "component/button.scss";
+@import "component/menu.scss";
+@import "component/benefits.scss";
+@import "component/headline.scss";
+@import "component/contacts.scss";
+@import "component/ingredients.scss";
+@import "component/order-section.scss";
+@import "component/hero.scss";
+@import "component/footer.scss";
+@import "component/butter.scss";
+@import "component/header.scss";
+@import "component/map-section.scss";
+@import "component/butters.scss";
+@import "component/radio.scss";
+@import "component/why-section.scss";
+@import "component/team.scss";
+@import "component/section-slider.scss";
+@import "component/board-menu.scss";
+@import "component/product-slider.scss";
+@import "component/social.scss";
+@import "component/fixed-menu.scss";
+@import "component/humburger.scss";
+@import "component/fullscrean-menu.scss";
+@import "component/modal.scss";
