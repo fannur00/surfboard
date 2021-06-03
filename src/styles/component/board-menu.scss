@@ -147,11 +147,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(../img/player_img.jpg);
+    background-image: url(./img/player_img.jpg);
     cursor: pointer;
+    background-position: center;
 
     &::before {
-        content: url(../img/play.jpg);
+        content: url(./img/play.jpg);
         position: absolute;
         top: 50%;
         left: 50%;

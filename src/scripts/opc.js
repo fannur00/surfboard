@@ -107,25 +107,24 @@
 
     $('[data-scroll-to]').click(e => {
         e.preventDefault();
-
+       
         const $this = $(e.currentTarget);
         const target = $this.attr('data-scroll-to');
         const reqSection = $(`[data-section-id=${target}]`);
 
         perfomTransition(reqSection.index());
+        if($('.fullscrean-menu').removeClass('active')) return
     })
 
-    // $("body").swipe( {
-    // swipe: function (event, direction) {
-    //     const scroller = viewportScroller();
-    //     let scrollDirection = '';
+    $("body").swipe( {
+    swipe: function (event, direction) {
+        const scroller = viewportScroller();
+        let scrollDirection = '';
 
-    //     if(direction === 'up') scrollDirection = "next";
-    //     if(direction === 'down') scrollDirection = "prev";
+        if(direction === 'up') scrollDirection = "next";
+        if(direction === 'down') scrollDirection = "prev";
 
-    //     scroller[scrollDirection]();
-    // }
-    // });
-
-    
+        scroller[scrollDirection]();
+    }
+    });
 })();
